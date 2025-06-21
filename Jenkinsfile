@@ -1,12 +1,12 @@
 pipeline {
   agent any
 
-  // stages {
-  //   stage('Clone') {
-  //     steps {
-  //       git 'https://github.com/PRAJWALPATIL-13/To-do-App-Jenkins-.git'
-  //     }
-  //   }
+  stages {
+    // stage('Clone') {
+    //   steps {
+    //     git 'https://github.com/PRAJWALPATIL-13/To-do-App-Jenkins-.git'
+    //   }
+    // }
 
     stage('Build Docker Images') {
       steps {
@@ -22,4 +22,4 @@ pipeline {
       }
     }
   }
-
+}
