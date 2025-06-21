@@ -1,0 +1,16 @@
+version: '3'
+services:
+  frontend:
+    build: ./frontend1
+    ports:
+      - "3000:3000"
+
+  auth:
+    build: ./auth-service
+    ports:
+      - "5001:5001"
+
+  tasks:
+    build: ./task-service
+    ports:
+      - "5000:5000"
